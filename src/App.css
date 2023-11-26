@@ -385,7 +385,7 @@ body {
   .notesBtn {
     display: flex;
     justify-content: center;
-    font-size: 21px;
+    font-size: 1.25em;
     padding: 2px 40px;
     margin-top: 40px;
     margin-left: auto;
@@ -394,7 +394,7 @@ body {
   }
 
   .plusSpan {
-    font-size: 35px;
+    font-size: 1.4em;
   }
 
   .groupIcon {
