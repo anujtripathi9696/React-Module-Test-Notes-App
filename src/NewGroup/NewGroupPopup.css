@@ -217,6 +217,7 @@ button:hover {
   .colorOptions {
     margin: 0;
     gap: 0.1em;
+    margin-left: 0.27em;
   }
 
   .colorOption {
