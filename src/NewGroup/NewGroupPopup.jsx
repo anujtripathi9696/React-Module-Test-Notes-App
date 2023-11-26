@@ -17,6 +17,12 @@ const NewGroupPopup = ({ onClose, onGroupCreate }) => {
     }
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleCreateGroup();
+    }
+  };
+
   return (
     <div className="popupBackground" onClick={onClose}>
       <div className="popupContainer" onClick={(e) => e.stopPropagation()}>
@@ -33,6 +39,7 @@ const NewGroupPopup = ({ onClose, onGroupCreate }) => {
             className='popup-input'
             value={groupName}
             onChange={(e) => setGroupName(e.target.value)}
+            onKeyPress={handleKeyPress} // Add this line
           />
         </div>
 
@@ -41,7 +48,7 @@ const NewGroupPopup = ({ onClose, onGroupCreate }) => {
             <label>Choose Color</label>
           </div>
           <div className="colorOptions">
-            {['#FF79F2', '#B38BFA', '#43E6FC', '#F19576', '#0047FF', '#6691FF', '#FFC0C0'].map(
+            {['#FF79F2', '#B38BFA', '#43E6FC', '#F19576', '#0047FF', '#6691FF'].map(
               (color, index) => (
                 <div
                   key={index}
@@ -55,9 +62,8 @@ const NewGroupPopup = ({ onClose, onGroupCreate }) => {
         </div>
 
         <div className="buttonContainer">
-  <button onClick={handleCreateGroup}>Create</button>
-</div>
-
+          <button onClick={handleCreateGroup}>Create</button>
+        </div>
 
         <div className="groupName" style={{ color: '#000' }}>
           {groupName}
