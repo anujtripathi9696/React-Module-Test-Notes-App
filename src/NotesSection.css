@@ -286,6 +286,7 @@ textarea {
   .notesSection {
     border-radius: 0;
     height: 100vh;
+    overflow: hidden;
   }
 
   .groupHeader {
