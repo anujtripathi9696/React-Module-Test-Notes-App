@@ -387,7 +387,16 @@ textarea {
     width: 2em;
   }
 
+  .sendButton img:hover {
+    width: 2em;
+  }
+
   .sendButton {
+    bottom: 4em;
+    right: 4em;
+  }
+
+  .sendButton:hover {
     bottom: 4em;
     right: 4em;
   }
