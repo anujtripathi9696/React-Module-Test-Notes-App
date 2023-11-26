@@ -385,19 +385,21 @@ textarea {
 
   .sendButton img {
     width: 2em;
+    transition: none;
   }
 
-  .sendButton img:hover {
+/*   .sendButton img:hover {
     width: 2em;
-  }
+  } */
 
   .sendButton {
     bottom: 4em;
     right: 4em;
+    transition: none;
   }
 
-  .sendButton:hover {
+/*   .sendButton:hover {
     bottom: 4em;
     right: 4em;
-  }
+  } */
 }
